@@ -35,6 +35,6 @@ static this() {
   timesheetApp = App
     .name("timesheetApp")
     .rootPath("/apps/timesheet")
-    .addRoute(Route("", HTTPMethod.GET, MYNAMEIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, MYNAMEIndexPageController));
+    .addRoute(Route("", HTTPMethod.GET, TSHIndexPageController))
+    .addRoute(Route("/", HTTPMethod.GET, TSHIndexPageController));
 }

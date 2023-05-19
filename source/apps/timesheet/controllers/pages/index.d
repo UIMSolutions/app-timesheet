@@ -8,14 +8,14 @@ module apps.timesheet.controllers.pages.index;
 import apps.timesheet;
 @safe:
 
-class DMYNAMEIndexPageController : DAPPPageController {
-  mixin(ControllerThis!("MYNAMEIndexPageController"));
+class DTSHIndexPageController : DAPPPageController {
+  mixin(ControllerThis!("TSHIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(MYNAMEIndexView(this));
+      .view(TSHIndexView(this));
   }
 }
-mixin(ControllerCalls!("MYNAMEIndexPageController"));
+mixin(ControllerCalls!("TSHIndexPageController"));

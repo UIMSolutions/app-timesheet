@@ -8,14 +8,14 @@ module apps.timesheet.controllers.pages.error;
 import apps.timesheet;
 @safe:
 
-class DMYNAMEErrorPageController : DAPPPageController {
-  mixin(ControllerThis!("MYNAMEErrorPageController"));
+class DTSHErrorPageController : DAPPPageController {
+  mixin(ControllerThis!("TSHErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(MYNAMEErrorView(this));
+      .view(TSHErrorView(this));
   }
 }
-mixin(ControllerCalls!("MYNAMEErrorPageController"));
+mixin(ControllerCalls!("TSHErrorPageController"));
