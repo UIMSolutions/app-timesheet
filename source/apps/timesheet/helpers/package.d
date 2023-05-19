@@ -1,1 +1,1 @@
-module apps.myname.helpers;
+module apps.timesheet.helpers;

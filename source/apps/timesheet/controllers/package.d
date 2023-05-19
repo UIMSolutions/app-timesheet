@@ -3,10 +3,10 @@
   License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
   Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module apps.myname.controllers;
+module apps.timesheet.controllers;
 
 public { // Packages
-  import apps.myname.controllers.actions;
-  import apps.myname.controllers.components;
-  import apps.myname.controllers.pages;
+  import apps.timesheet.controllers.actions;
+  import apps.timesheet.controllers.components;
+  import apps.timesheet.controllers.pages;
 }

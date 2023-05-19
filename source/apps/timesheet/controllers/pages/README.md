@@ -1,1 +1,1 @@
-# Package 📦 apps.myname.controllers.pages
+# Package 📦 apps.timesheet.controllers.pages
