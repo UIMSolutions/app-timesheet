@@ -1,2 +1,2 @@
-# Package 📦 apps.myname.views.components
+# Package 📦 apps.timesheet.views.components
 

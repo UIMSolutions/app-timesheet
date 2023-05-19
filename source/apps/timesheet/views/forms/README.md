@@ -1,2 +1,2 @@
-# Package 📦 apps.myname.views.forms
+# Package 📦 apps.timesheet.views.forms
 

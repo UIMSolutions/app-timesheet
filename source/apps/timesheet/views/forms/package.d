@@ -1,7 +1,7 @@
-module apps.myname.views.forms;
+module apps.timesheet.views.forms;
 
 public {
-  import apps.myname.views.forms.headers;
-  import apps.myname.views.forms.bodies;
-  import apps.myname.views.forms.footers;
+  import apps.timesheet.views.forms.headers;
+  import apps.timesheet.views.forms.bodies;
+  import apps.timesheet.views.forms.footers;
 }
