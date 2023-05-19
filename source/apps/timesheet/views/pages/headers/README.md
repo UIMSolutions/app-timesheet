@@ -1,2 +1,2 @@
-# Package 📦 apps.myname.views.pages.headers
+# Package 📦 apps.timesheet.views.pages.headers
 

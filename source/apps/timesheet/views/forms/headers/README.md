@@ -1,3 +1,3 @@
-# Package 📦 apps.myname.views.forms.headers
+# Package 📦 apps.timesheet.views.forms.headers
 
 
