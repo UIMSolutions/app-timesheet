@@ -1,4 +1,9 @@
-module apps.timesheets;
+/*********************************************************************************************************
+  Copyright: © 2015-2023 Ozan Nurettin Süel (Sicherheitsschmiede)                                        
+  License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
+  Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
+**********************************************************************************************************/
+module apps.myname;
 
 mixin(ImportPhobos!());
 
@@ -18,17 +23,18 @@ public import uim.servers;
 public import langs.javascript;
 
 public {
-  import apps.timesheets.controllers;
-  import apps.timesheets.helpers;
-  import apps.timesheets.tests;
-  import apps.timesheets.views;
+  import apps.myname.controllers;
+  import apps.myname.helpers;
+  import apps.myname.routers;
+  import apps.myname.tests;
+  import apps.myname.views;
 }
 
-DApp timesheetsApp;
+DApp mynameApp;
 static this() {
-  timesheetsApp = App
-    .name("timesheetsApp")
-    .rootPath("/apps/timesheets")
-    .addRoute(Route("", HTTPMethod.GET, TSHIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, TSHIndexPageController));
+  mynameApp = App
+    .name("mynameApp")
+    .rootPath("/apps/myname")
+    .addRoute(Route("", HTTPMethod.GET, MYNAMEIndexPageController))
+    .addRoute(Route("/", HTTPMethod.GET, MYNAMEIndexPageController));
 }
