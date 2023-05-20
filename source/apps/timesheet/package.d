@@ -30,11 +30,11 @@ public {
   import apps.timesheet.views;
 }
 
-DApp timesheetApp;
 static this() {
-  timesheetApp = App
+  AppRegistry.register("apps.timesheet",  
+    App
     .name("timesheetApp")
     .rootPath("/apps/timesheet")
     .addRoute(Route("", HTTPMethod.GET, TSHIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, TSHIndexPageController));
+    .addRoute(Route("/", HTTPMethod.GET, TSHIndexPageController)));
 }
