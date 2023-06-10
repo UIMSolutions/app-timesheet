@@ -8,7 +8,7 @@ module apps.timesheet.controllers.pages.index;
 import apps.timesheet;
 @safe:
 
-class DTSHIndexPageController : DAPPPageController {
+class DTSHIndexPageController : DPageController {
   mixin(ControllerThis!("TSHIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {

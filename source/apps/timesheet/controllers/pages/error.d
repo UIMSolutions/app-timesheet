@@ -8,7 +8,7 @@ module apps.timesheet.controllers.pages.error;
 import apps.timesheet;
 @safe:
 
-class DTSHErrorPageController : DAPPPageController {
+class DTSHErrorPageController : DPageController {
   mixin(ControllerThis!("TSHErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
