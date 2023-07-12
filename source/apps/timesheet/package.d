@@ -32,9 +32,11 @@ public {
 
 static this() {
   AppRegistry.register("apps.timesheet",  
-    App
-    .name("timesheetApp")
-    .rootPath("/apps/timesheet")
-    .addRoute(Route("", HTTPMethod.GET, TSHIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, TSHIndexPageController)));
+    App("timesheetApp", "/apps/timesheet")
+      .importTranslations()
+      .addRoutes(
+        Route("", HTTPMethod.GET, IndexPageController),
+        Route("/", HTTPMethod.GET, IndexPageController)
+      )
+    );
 }
