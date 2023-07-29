@@ -7,8 +7,10 @@ module apps.timesheet;
 
 mixin(ImportPhobos!());
 
-// Dub
-public import vibe.d;
+// External
+public {
+  import vibe.d;
+}
 
 // UIM
 public import uim.core;
@@ -31,12 +33,21 @@ public {
 }
 
 static this() {
-  AppRegistry.register("apps.timesheet",  
-    App("timesheetApp", "/apps/timesheet")
-      .importTranslations()
-      .addRoutes(
-        Route("", HTTPMethod.GET, IndexPageController),
-        Route("/", HTTPMethod.GET, IndexPageController)
-      )
+  // Create app
+  auto myApp = App("timesheetApp", "apps/timesheet");
+
+  // Customize app
+  with(myApp) {
+    importTranslations;
+    addControllers([
+      "time.index": IndexPageController
+    ]);
+    addRoutes(
+      Route("", HTTPMethod.GET, controller("time.index")),
+      Route("/", HTTPMethod.GET, controller("time.index"))
     );
+  }
+
+  // Register app
+  AppRegistry.register("apps.timesheet", myApp);
 }
